@@ -364,3 +364,24 @@ footer > div > ul li a {
         flex-basis: 49%;
     }
 }
+
+@media all and (min-width: 992px) {
+    #most-popular {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25%;
+        justify-content: center;
+    }
+
+    #most-popular > .most-popular__title {
+        flex-basis: 100%;
+    }
+
+    #most-popular article {
+        flex-basis: 49%;
+    }
+
+    #accommodations article {
+        flex-basis: 32%;
+    }
+}
