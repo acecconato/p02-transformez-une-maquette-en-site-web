@@ -16,6 +16,11 @@ b, strong {
     font-weight: bold;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 header {
     width: 100%;
     height: auto;
@@ -54,11 +59,28 @@ header {
 .navbar__menu li {
     width: 50%;
     text-align: center;
-    padding: 15px;
     border-bottom: 3px solid var(--grey);
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, white 50%, var(--blue) 50%);
+    transition: background-position 0.2s ease-in, border-bottom-color 0s 0.2s;
+}
+
+.navbar__menu li:hover {
+    background-position: 0 100%;
+    color: var(--blue);
+    border-bottom-color: var(--blue);
+    transition: background-position 0.3s ease-out, border-bottom-color 0s;
+}
+
+.navbar__menu li:hover a,
+.navbar__menu li.active:hover a {
+    color: white;
 }
 
 .navbar__menu li a {
+    width: 100%;
+    display: inline-block;
+    padding: 15px 0;
     color: black;
 }
 
@@ -165,12 +187,22 @@ input.searchbar__input {
 }
 
 button.filters__btn {
-    background: white;
     border: 3px solid var(--grey);
     border-left: none;
     border-radius: 30px;
     padding: 0 15px 0 0;
     font-size: 1.2rem;
+    background: white;
+
+    background: linear-gradient(to left, white 50%, var(--lightblue) 50%) right;
+    background-size: 200%;
+    transition: all 0.125s;
+}
+
+button.filters__btn:hover {
+    background-position: left;
+    border-color: var(--lightblue);
+    transition: all 0.3s cubic-bezier(0, 1, 1, 1);
 }
 
 .filters__info {
@@ -198,7 +230,7 @@ button.filters__btn {
     justify-content: space-between;
 }
 
-#most-popular article {
+#most-popular a {
     background: white;
     border-radius: 15px;
     padding: 5px;
@@ -302,13 +334,13 @@ footer > div {
 footer > div > h3 {
     font-weight: bold;
     font-size: 1.45rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 footer > div > ul li a {
     text-decoration: none;
     color: black;
     display: inline-block;
-    margin: 9px 0;
+    margin: 8px 0;
     font-size: 1.2rem;
 }
