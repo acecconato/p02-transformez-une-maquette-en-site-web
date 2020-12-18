@@ -16,7 +16,6 @@ header {
 
 /* TOP NAVBAR */
 .navbar {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +39,6 @@ header {
 .navbar__menu {
     margin-top: 10px;
     flex-basis: 100%;
-    display: flex;
     flex-direction: row;
     justify-content: center;
 }
@@ -82,7 +80,6 @@ header {
 
 .searchbar__form {
     margin: 35px 0;
-    display: flex;
     align-items: center;
 }
 
@@ -134,7 +131,6 @@ input.searchbar__input {
 }
 
 .filters__content {
-    display: flex;
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;
@@ -189,19 +185,12 @@ button.filters__btn {
     margin-right: 10px;
 }
 
-.most-popular, .accommodations {
-    padding: 45px 20px 25px 20px;
-}
-
 .most-popular__title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
-    font-size: 1.7rem;
 }
 
 .most-popular article {
-    display: flex;
     background: white;
     border-radius: 15px;
     padding: 5px;
@@ -217,32 +206,30 @@ button.filters__btn {
 }
 
 .most-popular__description {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 12px 25px;
 }
 
-.most-popular__article-title {
+h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
 
-.most-popular__star {
+.rating .fa-star {
     color: var(--blue);
 }
 
-.most-popular__star--empty {
+.rating .rating-star--empty {
     color: var(--grey);
 }
 
-.accommodations__title {
+h2 {
     margin-bottom: 30px;
     font-size: 1.7rem;
 }
 
 .accommodations article {
-    display: flex;
     flex-direction: column;
     box-shadow: 1px 3px 8px 6px var(--grey);;
     margin: 12px 0;
@@ -250,10 +237,54 @@ button.filters__btn {
     border: 5px solid white;
 }
 
-.accommodations article img {
+img.accommodations__image {
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    height: 31vw;
+}
+
+.accommodations__description {
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.accommodations__description > p {
+    margin-bottom: 10px;
+}
+
+.accommodations > .show-more {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.activities article {
+    font-weight: bold;
+    box-shadow: 1px 3px 8px 6px var(--grey);;
+    border-radius: 15px;
+    margin: 33px 0;
+}
+
+.activities figure > img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 31vw;
+    object-fit: cover;
+}
+
+.activities figure > figcaption {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.price {
+    font-weight: bold;
 }
 
 /* UTILS */
@@ -273,6 +304,10 @@ button.filters__btn {
     background: var(--grey);
 }
 
+.d-flex {
+    display: flex;
+}
+
 .btn {
     border: none;
     outline: none;
@@ -282,6 +317,10 @@ button.filters__btn {
 .img-fluid {
     width: 100%;
     height: auto;
+}
+
+.padding {
+    padding: 45px 20px 25px 20px;
 }
 
 article {
