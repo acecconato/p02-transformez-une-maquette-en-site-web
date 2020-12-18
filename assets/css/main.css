@@ -340,3 +340,9 @@ footer > div > ul li a {
     margin: 8px 0;
     font-size: 1.2rem;
 }
+
+@media all and (min-width: 576px) {
+    .padding-section {
+        padding: 65px 60px 50px 60px;
+    }
+}
