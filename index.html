@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/tools.css">
 </head>
 <body>
 
@@ -25,14 +26,14 @@
         </a>
         <a class="navbar__register text-bold text-blue" href="#">S'inscrire</a>
         <ul class="navbar__menu d-flex">
-            <li class="active"><a href="">Hébergements</a></li>
-            <li><a href="">Activités</a></li>
+            <li class="active"><a href="#accommodations">Hébergements</a></li>
+            <li><a href="#activities">Activités</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section class="searchbar filters">
+    <section id="searchbar-filters">
         <h1 class="searchbar__title text-bold">Trouvez votre hébergement pour des vacances de reve</h1>
         <p class="searchbar__subtitle">En plein centre ville ou en pleine nature</p>
         <form class="searchbar__form d-flex" action="#" method="post">
@@ -59,7 +60,7 @@
         </p>
     </section>
 
-    <section class="most-popular greybg padding">
+    <aside id="most-popular" class="greybg padding-section">
         <h2 class="most-popular__title text-bold">Les plus populaires<span><i class="fas fa-chart-line"></i></span></h2>
         <article class="d-flex">
             <img class="img-fluid"
@@ -68,7 +69,7 @@
             <div class="most-popular__description d-flex">
                 <div>
                     <h3 class="most-popular__article-title text-bold">Hotel Le soleil du matin</h3>
-                    <p>Nuit à partir de 128€</p>
+                    <p>Nuit à partir de 128<b>€</b></p>
                 </div>
                 <div class="rating">
                     <i class="fas fa-star"></i>
@@ -86,7 +87,7 @@
             <div class="most-popular__description d-flex">
                 <div>
                     <h3 class="most-popular__article-title text-bold">Au coeur de l'eau Chambres d'hotes</h3>
-                    <p>Nuit à partir de 71€</p>
+                    <p>Nuit à partir de 71<b>€</b></p>
                 </div>
                 <div class="rating">
                     <i class="fas fa-star"></i>
@@ -104,7 +105,7 @@
             <div class="most-popular__description d-flex">
                 <div>
                     <h3 class="most-popular__article-title text-bold">Hotel Tout bleu et Blanc</h3>
-                    <p>Nuit à partir de 68€</p>
+                    <p>Nuit à partir de 68<b>€</b></p>
                 </div>
                 <div class="rating">
                     <i class="fas fa-star"></i>
@@ -115,9 +116,9 @@
                 </div>
             </div>
         </article>
-    </section>
-    <!--todo-->
-    <section class="accommodations padding">
+    </aside>
+
+    <section id="accommodations" class="padding-section">
         <h2 class="accommodations__title text-bold">Hébergements à Marseille</h2>
         <article class="d-flex">
             <img class="accommodations__image img-fluid"
@@ -125,7 +126,7 @@
                  alt="Chambre de l'Auberge la Cannebière">
             <div class="accommodations__description d-flex">
                 <h3 class="text-bold">Auberge la Cannebière</h3>
-                <p>Nuit à partir de <span class="price">25€</span></p>
+                <p>Nuit à partir de <b>25€</b></p>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -141,7 +142,7 @@
                  alt="Chambre de l'Hotel du port">
             <div class="accommodations__description d-flex">
                 <h3 class="text-bold">Hotel du port</h3>
-                <p>Nuit à partir de 52<span class="price">€</span></p>
+                <p>Nuit à partir de 52<b>€</b></p>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -157,7 +158,7 @@
                  alt="Chambre de l'Hotel Les mouettes">
             <div class="accommodations__description d-flex">
                 <h3 class="text-bold">Hotel Les mouettes</h3>
-                <p>Nuit à partir de 76<span class="price">€</span></p>
+                <p>Nuit à partir de 76<b>€</b></p>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -173,7 +174,7 @@
                  alt="Chambre de l'Hotel de la mer">
             <div class="accommodations__description d-flex">
                 <h3 class="text-bold">Hotel de la mer</h3>
-                <p>Nuit à partir de 46<span class="price">€</span></p>
+                <p>Nuit à partir de 46<b>€</b></p>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -189,7 +190,7 @@
                  alt="Chambre de l'Auberge Le Panier">
             <div class="accommodations__description d-flex">
                 <h3 class="text-bold">Auberge Le Panier</h3>
-                <p>Nuit à partir de <span class="price">23€</span></p>
+                <p>Nuit à partir de <b>23€</b></p>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -205,7 +206,7 @@
                  alt="Chambre de l'Hotel chez Amina">
             <div class="accommodations__description d-flex">
                 <h3 class="text-bold">Hotel chez Amina</h3>
-                <p>Nuit à partir de 96<span class="price">€</span></p>
+                <p>Nuit à partir de 96<b>€</b></p>
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -218,7 +219,7 @@
         <a class="show-more" href="#">Afficher plus</a>
     </section>
 
-    <section class="activities padding">
+    <section id="activities" class="padding-section">
         <h2 class="text-bold">Activités à Marseille</h2>
         <article>
             <figure>
@@ -271,7 +272,7 @@
     </section>
 </main>
 
-<footer>
+<footer class="padding-section d-flex greybg">
     <div>
         <h3>A propos</h3>
         <ul>
