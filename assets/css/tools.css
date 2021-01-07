@@ -1,0 +1,54 @@
+.text-bold {
+    font-weight: bold;
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-lightblue {
+    color: var(--lightblue);
+}
+
+.greybg {
+    background: var(--grey);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex--wrap {
+    flex-wrap: wrap;
+}
+
+.d-flex--column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.padding-section {
+    padding: 45px 20px 25px 20px;
+}
