@@ -18,6 +18,26 @@
     display: flex;
 }
 
+.d-flex--wrap {
+    flex-wrap: wrap;
+}
+
+.d-flex--column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
 .btn {
     border: none;
     outline: none;

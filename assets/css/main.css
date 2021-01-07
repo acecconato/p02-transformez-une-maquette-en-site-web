@@ -21,35 +21,26 @@ header {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
+    padding-top: 15px;
 }
 
 /* TOP NAVBAR */
-.navbar {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .navbar a {
     text-decoration: none;
 }
 
 .navbar__logo {
-    padding-top: 15px;
     padding-left: 20px;
 }
 
 .navbar__register {
     text-align: right;
-    padding-top: 15px;
     padding-right: 20px;
 }
 
 .navbar__menu {
     margin-top: 10px;
     flex-basis: 100%;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .navbar__menu li {
@@ -106,7 +97,6 @@ header {
 
 .searchbar__form {
     margin: 35px 0;
-    align-items: center;
 }
 
 input.searchbar__input {
@@ -159,7 +149,6 @@ input.searchbar__input {
 .filters__content {
     flex-wrap: wrap;
     gap: 15px;
-    align-items: center;
 }
 
 .filters__content button {
@@ -209,9 +198,6 @@ button.filters__btn:hover {
 }
 
 .filters__info i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--blue);
     background: white;
     border: 1px solid var(--grey);
@@ -219,11 +205,6 @@ button.filters__btn:hover {
     min-height: 25px;
     min-width: 25px;
     margin-right: 10px;
-}
-
-.most-popular__title {
-    display: flex;
-    justify-content: space-between;
 }
 
 #most-popular a {
@@ -242,8 +223,6 @@ button.filters__btn:hover {
 }
 
 .most-popular__description {
-    flex-direction: column;
-    justify-content: space-between;
     padding: 12px 25px;
 }
 
@@ -277,13 +256,11 @@ img.accommodations__image {
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 31vw;
+    height: 140px;
 }
 
 .accommodations__description {
     padding: 10px;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 .accommodations__description > p {
@@ -309,7 +286,7 @@ img.accommodations__image {
 #activities figure > img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 31vw;
+    height: 140px;
     object-fit: cover;
 }
 
@@ -329,7 +306,7 @@ footer > div {
 
 footer > div > h3 {
     font-weight: bold;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
 }
 
@@ -338,7 +315,18 @@ footer > div > ul li a {
     color: black;
     display: inline-block;
     margin: 8px 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+@media all and (min-width: 576px) {
+    .padding-section {
+        padding: 65px 60px 50px 60px;
+    }
+
+    img.accommodations__image,
+    #activities figure > img {
+        height: 250px;
+    }
 }
 
 @media all and (min-width: 768px) {
