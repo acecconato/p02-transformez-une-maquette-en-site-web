@@ -21,6 +21,7 @@ header {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
+    padding-top: 15px;
 }
 
 /* TOP NAVBAR */
@@ -29,13 +30,11 @@ header {
 }
 
 .navbar__logo {
-    padding-top: 15px;
     padding-left: 20px;
 }
 
 .navbar__register {
     text-align: right;
-    padding-top: 15px;
     padding-right: 20px;
 }
 
@@ -257,7 +256,7 @@ img.accommodations__image {
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 31vw;
+    height: 140px;
 }
 
 .accommodations__description {
@@ -287,7 +286,7 @@ img.accommodations__image {
 #activities figure > img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 31vw;
+    height: 140px;
     object-fit: cover;
 }
 
@@ -307,7 +306,7 @@ footer > div {
 
 footer > div > h3 {
     font-weight: bold;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
 }
 
@@ -316,5 +315,5 @@ footer > div > ul li a {
     color: black;
     display: inline-block;
     margin: 8px 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
