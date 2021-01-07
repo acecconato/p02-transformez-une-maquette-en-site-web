@@ -328,3 +328,27 @@ footer > div > ul li a {
         height: 250px;
     }
 }
+
+@media all and (min-width: 768px) {
+    #accommodations,
+    #activities > div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0 1.25%;
+    }
+
+    #accommodations > .accommodations__title,
+    #activities > h2 {
+        flex-basis: 100%;
+    }
+
+    #activities article:nth-child(3n+1) {
+        flex-basis: 99%;
+    }
+
+    #accommodations article,
+    #activities article {
+        flex-basis: 49%;
+    }
+}
