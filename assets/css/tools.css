@@ -26,6 +26,10 @@
     flex-direction: column;
 }
 
+.d-flex--row {
+    flex-direction: row;
+}
+
 .justify-content-center {
     justify-content: center;
 }
