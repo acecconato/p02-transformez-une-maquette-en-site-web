@@ -372,4 +372,9 @@ footer > div > ul li a {
     #accommodations article {
         flex-basis: 32%;
     }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
