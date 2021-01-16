@@ -231,6 +231,10 @@ h3 {
     margin-bottom: 10px;
 }
 
+div.rating {
+    margin-top: auto;
+}
+
 .rating .fa-star {
     color: var(--blue);
 }
@@ -468,7 +472,12 @@ footer > div > ul li a {
     .lg-aside-container {
         display: flex;
         gap: 45px;
-        margin: 0 50px;
+        margin: 0 25px;
+    }
+
+    .padding-section {
+        padding-right: 25px;
+        padding-left: 25px;
     }
 
     .lg-aside-container--row-reverse {
@@ -535,7 +544,53 @@ footer > div > ul li a {
     #activities > div {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 300px);
+    }
+
+    #activities figure {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #activities article > a {
+        height: 100%;
+        display: block;
+    }
+
+    #activities figure img {
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    #activities figure figcaption {
+        display: flex;
+        align-items: flex-end;
+        min-height: 0;
+    }
+
+    #activities figure > div {
+        height: 100%;
+    }
+
+    #activities figure > div {
+        max-height: 300px;
+    }
+
+    #activities .position-1 figure > div,
+    #activities .position-4 figure > div {
+        max-height: 100%;
+    }
+
+    #activities .position-1 figure img,
+    #activities .position-4 figure img {
+        height: 100%;
+    }
+
+    #activities figcaption > h3 {
+        margin-bottom: 0;
     }
 
     #activities article.position-1 {
@@ -572,7 +627,7 @@ footer > div > ul li a {
 @media all and (min-width: 1368px) {
     main, header {
         width: 80%;
-        max-width: 1920px;
+        max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
     }
