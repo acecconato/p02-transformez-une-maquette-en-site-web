@@ -284,10 +284,10 @@ img.accommodations__image {
     font-weight: bold;
     box-shadow: 1px 3px 8px 6px var(--grey);;
     border-radius: 15px;
-    margin: 13px 0;
+    margin: 30px 0;
 }
 
-#activities figure > img {
+#activities figure img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 140px;
@@ -335,8 +335,7 @@ footer > div > ul li a {
 }
 
 @media all and (min-width: 768px) {
-    #accommodations,
-    #activities > div {
+    #accommodations {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -348,13 +347,33 @@ footer > div > ul li a {
         flex-basis: 100%;
     }
 
-    #activities article:nth-child(3n+1) {
-        flex-basis: 99%;
+    #accommodations article {
+        flex-basis: 49%;
     }
 
-    #accommodations article,
+    #activities > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #activities figure img {
+        height: 100%;
+    }
+
+    #activities figure > div {
+        height: 150px;
+    }
+
     #activities article {
-        flex-basis: 49%;
+        width: 100%;
+    }
+
+    #activities div.position-2-3,
+    #activities div.position-5-6 {
+        display: flex;
+        gap: 30px;
+        width: 100%;
     }
 }
 
@@ -544,7 +563,7 @@ footer > div > ul li a {
     #activities > div {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 300px);
+        gap: 30px;
     }
 
     #activities figure {
@@ -576,7 +595,7 @@ footer > div > ul li a {
     }
 
     #activities figure > div {
-        max-height: 300px;
+        max-height: 250px;
     }
 
     #activities .position-1 figure > div,
@@ -594,33 +613,38 @@ footer > div > ul li a {
     }
 
     #activities article.position-1 {
-        grid-row: 1 / 3;
         grid-column: 1 / 2;
     }
 
-    #activities article.position-2 {
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-    }
-
-    #activities article.position-3 {
-        grid-row: 2 / 3;
+    #activities div.position-2-3 {
         grid-column: 2 / 3;
     }
 
     #activities article.position-4 {
-        grid-row: 1 / 3;
         grid-column: 3 / 4;
     }
 
-    #activities article.position-5 {
-        grid-row: 1 / 2;
-        grid-column: 4 / 5;
+    #activities div.position-5-6 {
+        grid-column: 4/5;
     }
 
-    #activities article.position-6 {
-        grid-row: 2 / 3;
-        grid-column: 4 / 5;
+   #activities article.position-3 figure > div,
+   #activities article.position-5 figure > div {
+       max-height: 150px;
+   }
+
+   #activities article.position-2 figure > div,
+   #activities article.position-6 figure > div {
+       height: 250px;
+   }
+
+   #activities article {
+       margin-bottom: 45px;
+   }
+
+    #activities div.position-2-3,
+    #activities div.position-5-6 {
+        display: block;
     }
 }
 
