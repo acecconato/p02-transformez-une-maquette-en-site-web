@@ -590,7 +590,8 @@ footer > div > ul li a {
         min-height: 0;
     }
 
-    #activities figure > div {
+    #activities .position-1 figure > div,
+    #activities .position-4 figure > div {
         height: 100%;
     }
 
