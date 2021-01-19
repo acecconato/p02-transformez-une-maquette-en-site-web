@@ -231,6 +231,10 @@ h3 {
     margin-bottom: 10px;
 }
 
+div.rating {
+    margin-top: auto;
+}
+
 .rating .fa-star {
     color: var(--blue);
 }
@@ -280,10 +284,10 @@ img.accommodations__image {
     font-weight: bold;
     box-shadow: 1px 3px 8px 6px var(--grey);;
     border-radius: 15px;
-    margin: 33px 0;
+    margin: 30px 0;
 }
 
-#activities figure > img {
+#activities figure img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     height: 140px;
@@ -291,9 +295,10 @@ img.accommodations__image {
 }
 
 #activities figure > figcaption {
-    padding: 20px;
+    padding: 16px 10px;
     font-weight: bold;
     font-size: 1.3rem;
+    min-height: 20px;
 }
 
 footer {
@@ -330,8 +335,7 @@ footer > div > ul li a {
 }
 
 @media all and (min-width: 768px) {
-    #accommodations,
-    #activities > div {
+    #accommodations {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -343,13 +347,33 @@ footer > div > ul li a {
         flex-basis: 100%;
     }
 
-    #activities article:nth-child(3n+1) {
-        flex-basis: 99%;
+    #accommodations article {
+        flex-basis: 49%;
     }
 
-    #accommodations article,
+    #activities > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #activities figure img {
+        height: 100%;
+    }
+
+    #activities figure > div {
+        height: 150px;
+    }
+
     #activities article {
-        flex-basis: 49%;
+        width: 100%;
+    }
+
+    #activities div.position-2-3,
+    #activities div.position-5-6 {
+        display: flex;
+        gap: 30px;
+        width: 100%;
     }
 }
 
@@ -376,5 +400,260 @@ footer > div > ul li a {
     footer {
         flex-direction: row;
         justify-content: space-around;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .navbar__menu {
+        flex-basis: 0;
+        margin-top: 0;
+    }
+
+    .navbar__register {
+        order: 1;
+        width: 130px;
+        text-align: center;
+    }
+
+    .navbar__logo {
+        margin-right: auto;
+    }
+
+    .navbar__menu li {
+        border: none;
+        background-image: none;
+    }
+
+    .navbar__menu li:hover {
+        background-image: none;
+    }
+
+    .navbar__menu li:hover a,
+    .navbar__menu li.active:hover a {
+        color: var(--blue);
+    }
+
+    .navbar__menu li a {
+        padding: 0;
+        width: 150px;
+        text-align: center;
+    }
+
+    .navbar__menu li.active {
+        border-bottom: none;
+    }
+
+    .navbar__menu li.active::before,
+    .navbar__menu li:hover::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        top: 0;
+        border-top: 3px solid var(--blue);
+        transition: border-top-width 0.3s ease-in-out;
+    }
+
+    .searchbar__title {
+        font-size: 1.7rem;
+    }
+
+    .searchbar__subtitle {
+        font-size: 1.3rem;
+    }
+
+    .searchbar__form {
+        width: 40%;
+    }
+
+    .filters__content {
+        display: inline-flex;
+    }
+
+    .filters__title {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    .filters__content button {
+        margin-right: 20px;
+    }
+
+    .searchbar__btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 0 15px;
+    }
+
+    .searchbar__btn > i {
+        display: none;
+    }
+
+    .lg-aside-container {
+        display: flex;
+        gap: 45px;
+        margin: 0 25px;
+    }
+
+    .padding-section {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .lg-aside-container--row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    #accommodations,
+    #most-popular {
+        background-color: var(--grey);
+        border-radius: 15px;
+        padding: 40px 30px;
+    }
+
+    #accommodations {
+        flex-basis: 70%;
+        gap: 0 25px;
+    }
+
+    #accommodations article {
+        flex-basis: 30%;
+    }
+
+    .accommodations__description {
+        background: white;
+    }
+
+    img.accommodations__image {
+        height: 100px;
+    }
+
+    #accommodations .show-more {
+        margin-right: auto;
+    }
+
+    #most-popular {
+        flex-basis: 30%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 40px 30px 20px 30px;
+        gap: 0;
+    }
+
+    #most-popular a {
+        height: 135px;
+    }
+
+    #most-popular article,
+    #most-popular > .most-popular__title {
+        flex-basis: 0;
+    }
+
+    #most-popular article {
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    #activities > div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    #activities figure {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #activities article > a {
+        height: 100%;
+        display: block;
+    }
+
+    #activities figure img {
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    #activities figure figcaption {
+        display: flex;
+        align-items: flex-end;
+        min-height: 0;
+    }
+
+    #activities .position-1 figure > div,
+    #activities .position-4 figure > div {
+        height: 100%;
+    }
+
+    #activities figure > div {
+        max-height: 250px;
+    }
+
+    #activities .position-1 figure > div,
+    #activities .position-4 figure > div {
+        max-height: 100%;
+    }
+
+    #activities .position-1 figure img,
+    #activities .position-4 figure img {
+        height: 100%;
+    }
+
+    #activities figcaption > h3 {
+        margin-bottom: 0;
+    }
+
+    #activities article.position-1 {
+        grid-column: 1 / 2;
+    }
+
+    #activities div.position-2-3 {
+        grid-column: 2 / 3;
+    }
+
+    #activities article.position-4 {
+        grid-column: 3 / 4;
+    }
+
+    #activities div.position-5-6 {
+        grid-column: 4/5;
+    }
+
+   #activities article.position-3 figure > div,
+   #activities article.position-5 figure > div {
+       max-height: 150px;
+   }
+
+   #activities article.position-2 figure > div,
+   #activities article.position-6 figure > div {
+       height: 250px;
+   }
+
+   #activities article {
+       margin-bottom: 45px;
+   }
+
+    #activities div.position-2-3,
+    #activities div.position-5-6 {
+        display: block;
+    }
+}
+
+@media all and (min-width: 1368px) {
+    main, header {
+        width: 80%;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
